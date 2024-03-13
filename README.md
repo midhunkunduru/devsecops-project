@@ -14,14 +14,6 @@
   <p align="center">Home Page</p>
 </div>
 
-# **Youtube Video for step by step Demonstration!**
-[![Video Tutorial](https://img.youtube.com/vi/g8X5AoqCJHc/0.jpg)](https://youtu.be/g8X5AoqCJHc)
-
-
-## Susbcribe:
-[https://www.youtube.com/@cloudchamp?
-](https://www.youtube.com/@cloudchamp?sub_confirmation=1)
-
 # Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
@@ -37,7 +29,7 @@
 - Clone your application's code repository onto the EC2 instance:
     
     ```bash
-    git clone https://github.com/N4si/DevSecOps-Project.git
+    git clone https://github.com/midhunkunduru/devsecops-project.git
     ```
     
 
@@ -275,7 +267,7 @@ Certainly, here are the instructions without step numbers:
 
 Now, you have installed the Dependency-Check plugin, configured the tool, and added Docker-related plugins along with your DockerHub credentials in Jenkins. You can now proceed with configuring your Jenkins pipeline to include these tools and credentials in your CI/CD process.
 
-```groovy
+#groovy
 
 pipeline{
     agent any
@@ -353,14 +345,11 @@ pipeline{
 }
 
 
-If you get docker login failed errorr
-
+#If you get docker login failed error
 sudo su
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 
-
-```
 
 **Phase 4: Monitoring**
 
